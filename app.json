@@ -1,3 +1,4 @@
+
 {
   "expo": {
     "name": "Calculadora React Native",
@@ -5,8 +6,21 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "android": { "package": "com.proyecto.calculadorarn", "edgeToEdgeEnabled": true },
-    "ios": { "supportsTablet": true },
-    "experiments": { "tsconfigPaths": false }
+    "platforms": ["ios", "android", "web"],
+    "android": {
+      "package": "com.proyecto.calculadorarn",
+      "edgeToEdgeEnabled": true
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "Calculadora React Native"
+    },
+    "experiments": {
+      "tsconfigPaths": false
+    }
   }
 }
